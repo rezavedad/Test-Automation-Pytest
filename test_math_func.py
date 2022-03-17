@@ -16,7 +16,7 @@ def test_add() :
     assert math_func.add(7) == 9
     print(math_func.add(7, 3), '-------------------------')
     #print('-------------------------')
-# pytest -v -p no:warnings -s
+# pytest -v -p no:warnings -s , print line will be shown if -s is in the command line
 
 # @pytest.mark.number
 def test_product() :
