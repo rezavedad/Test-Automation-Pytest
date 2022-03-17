@@ -1,6 +1,7 @@
 # test_ will help the python to recognize this ass a test
 # in Terminal: cls to clear terminal
 # pytest -v -p no:warnings
+# # pytest -q -p no:warnings
 
 import pytest
 import math_func
@@ -13,6 +14,9 @@ import sys # getting version of python
 def test_add() :
     assert math_func.add(7, 3) == 10
     assert math_func.add(7) == 9
+    print(math_func.add(7, 3), '-------------------------')
+    #print('-------------------------')
+# pytest -v -p no:warnings -s
 
 # @pytest.mark.number
 def test_product() :
@@ -66,3 +70,7 @@ def test_product_strings() :
 # skip if
 # @pytest.mark.skipif(sys.version_info < (3, 3) , reason="Do not execute this test unit at the moment. (Reza Vedad) ")
 # python --version
+
+# q: quite
+# pytest -q
+# pytest -q -p no:warnings
