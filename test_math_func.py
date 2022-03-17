@@ -17,6 +17,7 @@ def test_add() :
     print(math_func.add(7, 3), '-------------------------')
     #print('-------------------------')
 # pytest -v -p no:warnings -s , print line will be shown if -s is in the command line
+#  -s shortcut for --capture=no.
 
 # @pytest.mark.number
 def test_product() :
